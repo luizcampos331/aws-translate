@@ -8,7 +8,7 @@ export default {
       http: {
         method: 'post',
         path: 'handler',
-        require: {
+        request: {
           schemas: {
             'appication/json': schema
           }

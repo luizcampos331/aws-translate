@@ -1,9 +1,9 @@
 import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/api-gateway';
 import { formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
-import TranslateService from 'src/application';
 import { container } from 'tsyringe';
 import schema from '../schema/schema';
+import TranslateService from 'src/application/translate.service';
 import '../../../../providers/translate'
 
 const handler: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
